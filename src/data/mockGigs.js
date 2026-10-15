@@ -23,9 +23,9 @@ export const initialMockGigs = [
     status: "OPEN", // OPEN, BIDDING, ASSIGNED, IN_PROGRESS, SUBMITTED, COMPLETED
     escrowStatus: "HELD", // HELD, RELEASED, REFUNDED
     createdAt: "2026-09-17T09:30:00Z",
-    ownerId: "usr_sarah",
+    ownerId: "usr_pooja",
     owner: {
-      id: "usr_sarah",
+      id: "usr_pooja",
       name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
@@ -36,7 +36,7 @@ export const initialMockGigs = [
     bids: [
       {
         id: "bid_01",
-        bidderId: "usr_david",
+        bidderId: "usr_rajesh",
         bidderName: "Rajesh Kumar",
         bidderAvatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
         bidderRating: 4.97,
@@ -49,7 +49,7 @@ export const initialMockGigs = [
       },
       {
         id: "bid_02",
-        bidderId: "usr_carlos",
+        bidderId: "usr_rohan",
         bidderName: "Rohan Patel",
         bidderAvatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
         bidderRating: 4.88,
@@ -97,7 +97,7 @@ export const initialMockGigs = [
     bids: [
       {
         id: "bid_03",
-        bidderId: "usr_carlos",
+        bidderId: "usr_rohan",
         bidderName: "Rohan Patel",
         bidderAvatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
         bidderRating: 4.88,
@@ -132,9 +132,9 @@ export const initialMockGigs = [
     status: "OPEN",
     escrowStatus: "HELD",
     createdAt: "2026-09-17T08:00:00Z",
-    ownerId: "usr_sarah",
+    ownerId: "usr_pooja",
     owner: {
-      id: "usr_sarah",
+      id: "usr_pooja",
       name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
@@ -145,7 +145,7 @@ export const initialMockGigs = [
     bids: [
       {
         id: "bid_04",
-        bidderId: "usr_elena",
+        bidderId: "usr_ananya",
         bidderName: "Ananya Iyer",
         bidderAvatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
         bidderRating: 5.0,
@@ -180,18 +180,18 @@ export const initialMockGigs = [
     status: "ASSIGNED",
     escrowStatus: "HELD",
     createdAt: "2026-09-15T11:00:00Z",
-    ownerId: "usr_sarah",
+    ownerId: "usr_pooja",
     owner: {
-      id: "usr_sarah",
+      id: "usr_pooja",
       name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
       reviewsCount: 38,
       verified: true
     },
-    assignedWorkerId: "usr_marcus",
+    assignedWorkerId: "usr_vikram",
     assignedWorker: {
-      id: "usr_marcus",
+      id: "usr_vikram",
       name: "Vikramaditya Singh",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
       rating: 4.95
@@ -221,9 +221,9 @@ export const initialMockGigs = [
     status: "IN_PROGRESS",
     escrowStatus: "HELD",
     createdAt: "2026-09-14T10:00:00Z",
-    ownerId: "usr_david",
+    ownerId: "usr_rajesh",
     owner: {
-      id: "usr_david",
+      id: "usr_rajesh",
       name: "Rajesh Kumar",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
       rating: 4.97,
@@ -262,9 +262,9 @@ export const initialMockGigs = [
     status: "OPEN",
     escrowStatus: "HELD",
     createdAt: "2026-09-17T06:45:00Z",
-    ownerId: "usr_elena",
+    ownerId: "usr_ananya",
     owner: {
-      id: "usr_elena",
+      id: "usr_ananya",
       name: "Ananya Iyer",
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
       rating: 5.0,
@@ -296,9 +296,9 @@ export const initialMockGigs = [
     status: "OPEN",
     escrowStatus: "HELD",
     createdAt: "2026-09-16T18:00:00Z",
-    ownerId: "usr_sarah",
+    ownerId: "usr_pooja",
     owner: {
-      id: "usr_sarah",
+      id: "usr_pooja",
       name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
@@ -330,9 +330,9 @@ export const initialMockGigs = [
     status: "OPEN",
     escrowStatus: "HELD",
     createdAt: "2026-09-17T12:00:00Z",
-    ownerId: "usr_marcus",
+    ownerId: "usr_vikram",
     owner: {
-      id: "usr_marcus",
+      id: "usr_vikram",
       name: "Vikramaditya Singh",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
       rating: 4.95,
@@ -364,18 +364,18 @@ export const initialMockGigs = [
     status: "ASSIGNED",
     escrowStatus: "HELD",
     createdAt: "2026-09-12T08:00:00Z",
-    ownerId: "usr_sarah",
+    ownerId: "usr_pooja",
     owner: {
-      id: "usr_sarah",
+      id: "usr_pooja",
       name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
       reviewsCount: 38,
       verified: true
     },
-    assignedWorkerId: "usr_emily",
+    assignedWorkerId: "usr_kavya",
     assignedWorker: {
-      id: "usr_emily",
+      id: "usr_kavya",
       name: "Kavya Nambiar",
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80",
       rating: 4.91
@@ -439,18 +439,18 @@ export const initialMockGigs = [
     status: "SUBMITTED", // Ready for review by owner
     escrowStatus: "HELD",
     createdAt: "2026-09-10T14:00:00Z",
-    ownerId: "usr_sarah",
+    ownerId: "usr_pooja",
     owner: {
-      id: "usr_sarah",
+      id: "usr_pooja",
       name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
       reviewsCount: 38,
       verified: true
     },
-    assignedWorkerId: "usr_elena",
+    assignedWorkerId: "usr_ananya",
     assignedWorker: {
-      id: "usr_elena",
+      id: "usr_ananya",
       name: "Ananya Iyer",
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
       rating: 5.0
@@ -480,9 +480,9 @@ export const initialMockGigs = [
     status: "OPEN",
     escrowStatus: "HELD",
     createdAt: "2026-09-17T07:10:00Z",
-    ownerId: "usr_sarah",
+    ownerId: "usr_pooja",
     owner: {
-      id: "usr_sarah",
+      id: "usr_pooja",
       name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
@@ -514,9 +514,9 @@ export const initialMockGigs = [
     status: "OPEN",
     escrowStatus: "HELD",
     createdAt: "2026-09-17T09:00:00Z",
-    ownerId: "usr_carlos",
+    ownerId: "usr_rohan",
     owner: {
-      id: "usr_carlos",
+      id: "usr_rohan",
       name: "Rohan Patel",
       avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
       rating: 4.88,
@@ -548,16 +548,16 @@ export const initialMockGigs = [
     status: "DISPUTED",
     escrowStatus: "HELD", // Frozen in escrow per SRS Section 5 Rule 20
     createdAt: "2026-09-08T10:00:00Z",
-    ownerId: "usr_david",
+    ownerId: "usr_rajesh",
     owner: {
-      id: "usr_david",
+      id: "usr_rajesh",
       name: "Rajesh Kumar",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
       rating: 4.97,
       reviewsCount: 124,
       verified: true
     },
-    assignedWorkerId: "usr_carlos",
+    assignedWorkerId: "usr_rohan",
     bidsCount: 1,
     bids: []
   },
@@ -583,18 +583,18 @@ export const initialMockGigs = [
     status: "COMPLETED",
     escrowStatus: "RELEASED",
     createdAt: "2026-09-09T08:30:00Z",
-    ownerId: "usr_sarah",
+    ownerId: "usr_pooja",
     owner: {
-      id: "usr_sarah",
+      id: "usr_pooja",
       name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
       reviewsCount: 38,
       verified: true
     },
-    assignedWorkerId: "usr_carlos",
+    assignedWorkerId: "usr_rohan",
     assignedWorker: {
-      id: "usr_carlos",
+      id: "usr_rohan",
       name: "Rohan Patel",
       avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
       rating: 4.88

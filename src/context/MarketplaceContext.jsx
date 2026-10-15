@@ -13,9 +13,26 @@ const MarketplaceContext = createContext();
 export function MarketplaceProvider({ children }) {
   const isDbLive = isSupabaseConfigured();
 
+  // 0. Auto-flush old cached mock storage (e.g. old US/dollar cache)
+  const DATA_VERSION = 'tp_v3_inr_localized';
+  if (typeof window !== 'undefined') {
+    try {
+      if (localStorage.getItem('tp_version') !== DATA_VERSION) {
+        localStorage.removeItem('tp_gigs');
+        localStorage.removeItem('tp_current_user');
+        localStorage.removeItem('tp_notifications');
+        localStorage.removeItem('tp_conversations');
+        localStorage.removeItem('tp_saved_gigs');
+        localStorage.setItem('tp_version', DATA_VERSION);
+      }
+    } catch (e) {
+      // ignore
+    }
+  }
+
   // 1. Active Persona
   const [currentUserId, setCurrentUserId] = useState(() => {
-    return localStorage.getItem('tp_current_user') || 'usr_sarah';
+    return localStorage.getItem('tp_current_user') || 'usr_pooja';
   });
 
   const currentUser = mockUsers.find(u => u.id === currentUserId) || mockUsers[0];

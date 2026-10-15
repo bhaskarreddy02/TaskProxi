@@ -8,7 +8,7 @@ export default function Login() {
   const navigate = useNavigate();
   const { allUsers, switchUser, isDatabaseConnected } = useMarketplace();
 
-  const [email, setEmail] = useState('sarah.connor@example.com');
+  const [email, setEmail] = useState('pooja.reddy@example.com');
   const [password, setPassword] = useState('password123');
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
@@ -85,31 +85,31 @@ export default function Login() {
           <div className="grid grid-cols-2 gap-1.5 text-[11px]">
             <button
               type="button"
-              onClick={() => { setEmail('sarah.connor@example.com'); }}
+              onClick={() => { setEmail('pooja.reddy@example.com'); }}
               className="p-1.5 bg-white border border-blue-200 rounded text-left font-medium text-slate-700 hover:bg-brand-50"
             >
-              Sarah (Client/Poster)
+              Pooja (Client/Poster)
             </button>
             <button
               type="button"
-              onClick={() => { setEmail('david.plumbing@example.com'); }}
+              onClick={() => { setEmail('rajesh.plumbing@example.com'); }}
               className="p-1.5 bg-white border border-blue-200 rounded text-left font-medium text-slate-700 hover:bg-brand-50"
             >
-              David (Plumber/Worker)
+              Rajesh (Plumber/Worker)
             </button>
             <button
               type="button"
-              onClick={() => { setEmail('elena.codes@example.com'); }}
+              onClick={() => { setEmail('ananya.codes@example.com'); }}
               className="p-1.5 bg-white border border-blue-200 rounded text-left font-medium text-slate-700 hover:bg-brand-50"
             >
-              Elena (Developer)
+              Ananya (Developer)
             </button>
             <button
               type="button"
-              onClick={() => { setEmail('admin@taskproxi.internal'); }}
+              onClick={() => { setEmail('admin@taskproxi.in'); }}
               className="p-1.5 bg-white border border-blue-200 rounded text-left font-medium text-slate-700 hover:bg-brand-50"
             >
-              Alex (Admin/Trust)
+              Arjun (Admin/Trust)
             </button>
           </div>
         </div>

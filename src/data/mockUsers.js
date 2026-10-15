@@ -3,7 +3,7 @@
 
 export const mockUsers = [
   {
-    id: "usr_sarah",
+    id: "usr_pooja",
     name: "Pooja Reddy",
     email: "pooja.reddy@example.com",
     role: "poster_primary",
@@ -49,7 +49,7 @@ export const mockUsers = [
     ]
   },
   {
-    id: "usr_david",
+    id: "usr_rajesh",
     name: "Rajesh Kumar",
     email: "rajesh.plumbing@example.com",
     role: "worker_primary",
@@ -95,7 +95,7 @@ export const mockUsers = [
     ]
   },
   {
-    id: "usr_elena",
+    id: "usr_ananya",
     name: "Ananya Iyer",
     email: "ananya.codes@example.com",
     role: "worker_primary",
@@ -131,7 +131,7 @@ export const mockUsers = [
     ]
   },
   {
-    id: "usr_marcus",
+    id: "usr_vikram",
     name: "Vikramaditya Singh",
     email: "vikram.events@example.com",
     role: "worker_primary",
@@ -210,7 +210,7 @@ export const mockUsers = [
     ]
   },
   {
-    id: "usr_carlos",
+    id: "usr_rohan",
     name: "Rohan Patel",
     email: "rohan.moves@example.com",
     role: "worker_primary",
@@ -234,7 +234,7 @@ export const mockUsers = [
     ]
   },
   {
-    id: "usr_emily",
+    id: "usr_kavya",
     name: "Kavya Nambiar",
     email: "kavya.content@example.com",
     role: "worker_primary",

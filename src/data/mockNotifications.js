@@ -4,7 +4,7 @@
 export const initialMockNotifications = [
   {
     id: "notif_01",
-    userId: "usr_sarah",
+    userId: "usr_pooja",
     type: "BID_RECEIVED",
     title: "New Bid on Emergency Pipe Leak Repair",
     description: "Rajesh Kumar submitted a bid of ₹2,200 with 1 day completion estimate.",
@@ -15,7 +15,7 @@ export const initialMockNotifications = [
   },
   {
     id: "notif_02",
-    userId: "usr_sarah",
+    userId: "usr_pooja",
     type: "WORK_SUBMITTED",
     title: "Work Submitted for Review",
     description: "Ananya Iyer submitted work for 'React + Tailwind Analytics Dashboard Redesign'.",
@@ -26,7 +26,7 @@ export const initialMockNotifications = [
   },
   {
     id: "notif_03",
-    userId: "usr_sarah",
+    userId: "usr_pooja",
     type: "ESCROW_FUNDED",
     title: "Simulated Escrow Secured",
     description: "Funds of ₹18,000 are safely held in escrow for 'Craft Mixologist for 60-Person Autumn Wedding Reception'.",
@@ -37,7 +37,7 @@ export const initialMockNotifications = [
   },
   {
     id: "notif_04",
-    userId: "usr_sarah",
+    userId: "usr_pooja",
     type: "MESSAGE_RECEIVED",
     title: "New Message from Rajesh Kumar",
     description: "'I will arrive tomorrow morning right at 9:00 AM with the compression valves and Teflon tape.'",
@@ -48,7 +48,7 @@ export const initialMockNotifications = [
   },
   {
     id: "notif_05",
-    userId: "usr_david",
+    userId: "usr_rajesh",
     type: "BID_ACCEPTED",
     title: "Bid Accepted!",
     description: "Your bid of ₹2,200 was accepted for Emergency Pipe Leak Repair. Escrow is held.",
@@ -59,7 +59,7 @@ export const initialMockNotifications = [
   },
   {
     id: "notif_06",
-    userId: "usr_carlos",
+    userId: "usr_rohan",
     type: "PAYMENT_RELEASED",
     title: "Payment Released: ₹3,200",
     description: "Pooja Reddy approved your work on Wall-Mounted Bookshelf Installation.",
@@ -70,7 +70,7 @@ export const initialMockNotifications = [
   },
   {
     id: "notif_07",
-    userId: "usr_david",
+    userId: "usr_rajesh",
     type: "DISPUTE_UPDATE",
     title: "Dispute Under Admin Review",
     description: "Dispute #DSP-409 regarding Commercial Espresso Bar Repair is being investigated by Admin Arjun Verma.",
@@ -81,11 +81,11 @@ export const initialMockNotifications = [
   },
   {
     id: "notif_08",
-    userId: "usr_sarah",
+    userId: "usr_pooja",
     type: "REVIEW_REQUEST",
     title: "Please review Rohan Patel",
     description: "Share your experience working on Wall-Mounted Bookshelf Installation.",
-    link: "/profile/usr_carlos",
+    link: "/profile/usr_rohan",
     timestamp: "2026-09-12T16:30:00Z",
     read: true,
     icon: "Star"
