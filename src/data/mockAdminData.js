@@ -1,13 +1,14 @@
 // Admin and Trust & Safety Data per SRS FR36-FR40
+// Localized with Indian names and INR amounts
 
 export const mockAdminStats = {
   activeUsers: 3482,
   totalGigsLive: 124,
-  simulatedEscrowHeld: 48950,
+  simulatedEscrowHeld: 489500, // INR
   disputesOpenCount: 3,
   riskFlagsQueue: 5,
   completedGigsMonthly: 412,
-  totalPlatformVolume: 182400
+  totalPlatformVolume: 1824000 // INR
 };
 
 export const mockDisputes = [
@@ -16,10 +17,10 @@ export const mockDisputes = [
     gigId: "gig_114",
     gigTitle: "Commercial Espresso Bar Machine Repair",
     raisedBy: "usr_david",
-    raisedByName: "David Miller",
+    raisedByName: "Rajesh Kumar",
     respondentId: "usr_carlos",
-    respondentName: "Carlos Rivera",
-    amount: 500,
+    respondentName: "Rohan Patel",
+    amount: 15000,
     status: "UNDER_REVIEW", // UNDER_REVIEW, RESOLVED_WORKER, RESOLVED_POSTER, PARTIAL_SPLIT
     reason: "Incomplete boiler valve seal leading to intermittent pressure loss.",
     evidenceCount: 3,
@@ -35,10 +36,10 @@ export const mockDisputes = [
     gigId: "gig_hist_09",
     gigTitle: "Custom Shopify Theme Extension",
     raisedBy: "usr_client_99",
-    raisedByName: "Nordic Goods Co.",
+    raisedByName: "Indic Retail Brands Ltd",
     respondentId: "usr_elena",
-    respondentName: "Elena Rostova",
-    amount: 950,
+    respondentName: "Ananya Iyer",
+    amount: 28000,
     status: "RESOLVED_WORKER",
     reason: "Deliverable scope disagreement after feature sign-off.",
     evidenceCount: 2,
@@ -55,7 +56,7 @@ export const mockRiskFlags = [
     id: "RSK-812",
     targetType: "GIG",
     targetId: "gig_991",
-    targetTitle: "Post 500 Fake App Reviews for $50",
+    targetTitle: "Post 500 Fake App Reviews for ₹1,500",
     riskLevel: "HIGH", // HIGH, MEDIUM, LOW
     flagReason: "Terms of Service Violation: Collusive / Fake Reviews Scheme",
     flaggedAt: "2026-09-17T04:20:00Z",
@@ -65,7 +66,7 @@ export const mockRiskFlags = [
     id: "RSK-811",
     targetType: "USER",
     targetId: "usr_sketchy_4",
-    targetTitle: "User @quickcash_pro",
+    targetTitle: "User @quickcash_india",
     riskLevel: "HIGH",
     flagReason: "Potential Collusive Bidding: Identical IP & fast reciprocal reviews detected.",
     flaggedAt: "2026-09-16T22:15:00Z",
@@ -75,9 +76,9 @@ export const mockRiskFlags = [
     id: "RSK-810",
     targetType: "GIG",
     targetId: "gig_988",
-    targetTitle: "Urgent Wire Transfer Assistance",
+    targetTitle: "Offer to bypass TaskProxi escrow via Direct UPI / Cash",
     riskLevel: "HIGH",
-    flagReason: "Off-platform payment attempt / potential shadow injection",
+    flagReason: "Off-platform payment attempt / potential shadow transaction",
     flaggedAt: "2026-09-16T18:00:00Z",
     status: "RESOLVED"
   }
@@ -86,7 +87,7 @@ export const mockRiskFlags = [
 export const mockAuditLogs = [
   {
     id: "AUD-991",
-    actor: "Alex Vance (Admin)",
+    actor: "Arjun Verma (Admin)",
     action: "FROZE_ESCROW",
     target: "Gig #gig_114 (Commercial Espresso Bar Repair)",
     details: "Automated payment freeze applied due to active dispute DSP-409.",
@@ -94,7 +95,7 @@ export const mockAuditLogs = [
   },
   {
     id: "AUD-990",
-    actor: "Alex Vance (Admin)",
+    actor: "Arjun Verma (Admin)",
     action: "SUSPENDED_ACCOUNT",
     target: "User #usr_sketchy_2",
     details: "Suspended for repeated sub-floor bidding bot activity.",
@@ -105,12 +106,12 @@ export const mockAuditLogs = [
     actor: "System Engine",
     action: "ENFORCED_BID_FLOOR",
     target: "Gig #gig_101",
-    details: "Rejected bid of $120 (below minimum 80% threshold $176).",
+    details: "Rejected bid of ₹1,500 (below minimum 80% threshold of ₹2,000).",
     timestamp: "2026-09-17T10:10:00Z"
   },
   {
     id: "AUD-988",
-    actor: "Alex Vance (Admin)",
+    actor: "Arjun Verma (Admin)",
     action: "TAXONOMY_ADDED",
     target: "Category: Events & Hospitality",
     details: "Added new subcategory 'Event Media & Logistics' -> 'AV Setup'.",

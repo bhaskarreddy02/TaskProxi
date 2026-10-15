@@ -28,7 +28,7 @@ export default function BidModal({ gig, isOpen, onClose, onSuccess }) {
     }
 
     if (numAmount < minFloor) {
-      setError(`Bid rejected: Amount ($${numAmount}) is below the minimum allowed bid floor of $${minFloor} (80% of gig budget).`);
+      setError(`Bid rejected: Amount (${formatCurrency(numAmount)}) is below the minimum allowed bid floor of ${formatCurrency(minFloor)} (80% of gig budget).`);
       return;
     }
 
@@ -98,10 +98,10 @@ export default function BidModal({ gig, isOpen, onClose, onSuccess }) {
           {/* Bid Amount Input */}
           <div>
             <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-              Your Bid Amount ($ USD) *
+              Your Bid Amount (₹ INR) *
             </label>
             <div className="relative">
-              <span className="absolute left-3.5 top-2.5 text-slate-400 font-semibold">$</span>
+              <span className="absolute left-3.5 top-2.5 text-slate-400 font-semibold">₹</span>
               <input
                 type="number"
                 value={amount}
@@ -110,7 +110,7 @@ export default function BidModal({ gig, isOpen, onClose, onSuccess }) {
                   setError('');
                 }}
                 min={minFloor}
-                step="5"
+                step="100"
                 placeholder={String(minFloor)}
                 className={`w-full pl-8 pr-4 py-2 text-sm font-semibold rounded-lg border ${
                   isBelowFloor

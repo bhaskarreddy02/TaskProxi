@@ -22,7 +22,7 @@ export default function BrowseGigs() {
   const [selectedCategory, setSelectedCategory] = useState(initialCat);
   const [selectedSubcategory, setSelectedSubcategory] = useState('all');
   const [selectedType, setSelectedType] = useState('all');
-  const [maxBudget, setMaxBudget] = useState(3000);
+  const [maxBudget, setMaxBudget] = useState(100000);
   const [sortBy, setSortBy] = useState('newest');
   const [mobileFilterOpen, setMobileFilterOpen] = useState(false);
 

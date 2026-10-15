@@ -120,22 +120,22 @@ export default function FilterPanel({
             Max Budget
           </label>
           <span className="text-xs font-bold text-brand-700">
-            ${maxBudget}
+            ₹{Number(maxBudget).toLocaleString('en-IN')}
           </span>
         </div>
         <input
           type="range"
-          min="100"
-          max="3000"
-          step="50"
+          min="1000"
+          max="100000"
+          step="1000"
           value={maxBudget}
           onChange={(e) => setMaxBudget(Number(e.target.value))}
           className="w-full h-1.5 bg-slate-200 rounded-lg appearance-none cursor-pointer accent-brand-600"
         />
         <div className="flex justify-between text-[10px] text-slate-400 mt-1">
-          <span>$100</span>
-          <span>$1,500</span>
-          <span>$3,000+</span>
+          <span>₹1,000</span>
+          <span>₹50,000</span>
+          <span>₹1,00,000+</span>
         </div>
       </div>
 

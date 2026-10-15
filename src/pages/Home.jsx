@@ -48,49 +48,49 @@ export default function Home() {
   const popularProjects = [
     {
       title: "Furniture Assembly",
-      price: "From $45",
+      price: "From ₹1,500",
       image: "https://images.unsplash.com/photo-1581783342308-f792dbdd27c5?w=500&auto=format&fit=crop&q=80",
       query: "assembly"
     },
     {
       title: "Emergency Plumbing",
-      price: "From $75",
+      price: "From ₹2,500",
       image: "https://images.unsplash.com/photo-1585704032915-c3400ca199e7?w=500&auto=format&fit=crop&q=80",
       query: "plumbing"
     },
     {
       title: "TV Mounting & Cables",
-      price: "From $65",
+      price: "From ₹2,000",
       image: "https://images.unsplash.com/photo-1593784991095-a205069470b6?w=500&auto=format&fit=crop&q=80",
       query: "mounting"
     },
     {
       title: "Fullstack Web & React",
-      price: "From $250",
+      price: "From ₹8,000",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&auto=format&fit=crop&q=80",
       query: "react"
     },
     {
       title: "Home Deep Cleaning",
-      price: "From $55",
+      price: "From ₹1,800",
       image: "https://images.unsplash.com/photo-1581578731548-c64695cc6952?w=500&auto=format&fit=crop&q=80",
       query: "cleaning"
     },
     {
       title: "Apartment Moving Help",
-      price: "From $80",
+      price: "From ₹2,800",
       image: "https://images.unsplash.com/photo-1600585152220-90363fe7e115?w=500&auto=format&fit=crop&q=80",
       query: "moving"
     },
     {
-      title: "Event Bartending & Staff",
-      price: "From $120",
+      title: "Event Hospitality & Staff",
+      price: "From ₹4,000",
       image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?w=500&auto=format&fit=crop&q=80",
-      query: "bartender"
+      query: "hospitality"
     },
     {
       title: "Bookkeeping & Accounting",
-      price: "From $90",
+      price: "From ₹3,000",
       image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=500&auto=format&fit=crop&q=80",
       query: "bookkeeping"
     }
@@ -356,12 +356,12 @@ export default function Home() {
             <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
               <RatingStars rating={5} showNumber={false} size="md" />
               <p className="text-xs text-slate-700 mt-3 leading-relaxed italic">
-                "Needed a licensed plumber for an under-sink copper pipe leak. David submitted a fair bid above the floor, arrived punctually at 9 AM, and completed the job cleanly. The escrow payout gave me total peace of mind."
+                "Needed a licensed plumber for an under-sink CPVC pipe leak. Rajesh submitted a fair bid above the floor, arrived punctually at 9 AM, and completed the job cleanly. The escrow payout gave me total peace of mind."
               </p>
               <div className="mt-4 pt-4 border-t border-slate-200/70 flex items-center justify-between">
                 <div>
-                  <h5 className="font-bold text-slate-900 text-xs">Sarah Connor</h5>
-                  <p className="text-[10px] text-slate-500">Homeowner &bull; Seattle, WA</p>
+                  <h5 className="font-bold text-slate-900 text-xs">Pooja Reddy</h5>
+                  <p className="text-[10px] text-slate-500">Homeowner &bull; Indiranagar, Bengaluru</p>
                 </div>
                 <span className="text-[10px] font-bold text-brand-700 px-2 py-0.5 rounded bg-brand-50 border border-brand-100">
                   Plumbing Repair
@@ -372,12 +372,12 @@ export default function Home() {
             <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
               <RatingStars rating={5} showNumber={false} size="md" />
               <p className="text-xs text-slate-700 mt-3 leading-relaxed italic">
-                "Elena revamped our SaaS dashboard with React and Tailwind. The code was exceptionally organized and fast. Being able to compare bids while knowing the minimum bid floor protects quality made hiring effortless."
+                "Ananya revamped our SaaS dashboard with React and Tailwind. The code was exceptionally organized and fast. Being able to compare bids while knowing the minimum bid floor protects quality made hiring effortless."
               </p>
               <div className="mt-4 pt-4 border-t border-slate-200/70 flex items-center justify-between">
                 <div>
-                  <h5 className="font-bold text-slate-900 text-xs">Nordic Goods Co.</h5>
-                  <p className="text-[10px] text-slate-500">Tech Founder &bull; Remote</p>
+                  <h5 className="font-bold text-slate-900 text-xs">Indic Tech Ltd.</h5>
+                  <p className="text-[10px] text-slate-500">Tech Founder &bull; Bengaluru / Remote</p>
                 </div>
                 <span className="text-[10px] font-bold text-brand-700 px-2 py-0.5 rounded bg-brand-50 border border-brand-100">
                   React Web Dev
@@ -388,12 +388,12 @@ export default function Home() {
             <div className="bg-slate-50 rounded-xl p-6 border border-slate-200">
               <RatingStars rating={5} showNumber={false} size="md" />
               <p className="text-xs text-slate-700 mt-3 leading-relaxed italic">
-                "Carlos assembled our complex IKEA Pax closet and wall-mounted our 75-inch TV. Super friendly, arrived with heavy-duty tools, and tested everything for safety. Highly recommend."
+                "Rohan assembled our complex IKEA Pax closet and wall-mounted our 75-inch TV. Super friendly, arrived with heavy-duty tools, and tested everything for safety. Highly recommend."
               </p>
               <div className="mt-4 pt-4 border-t border-slate-200/70 flex items-center justify-between">
                 <div>
                   <h5 className="font-bold text-slate-900 text-xs">Priya Sharma</h5>
-                  <p className="text-[10px] text-slate-500">Client &bull; Bellevue, WA</p>
+                  <p className="text-[10px] text-slate-500">Client &bull; Bandra, Mumbai</p>
                 </div>
                 <span className="text-[10px] font-bold text-brand-700 px-2 py-0.5 rounded bg-brand-50 border border-brand-100">
                   Furniture Assembly

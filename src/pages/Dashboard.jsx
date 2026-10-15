@@ -439,7 +439,7 @@ export default function Dashboard() {
               </div>
               <div className="p-4 bg-slate-50 rounded-xl border border-slate-200">
                 <span className="text-xs font-semibold text-slate-500">Disputed / Frozen</span>
-                <h4 className="text-2xl font-black text-slate-700 mt-1">$0</h4>
+                <h4 className="text-2xl font-black text-slate-700 mt-1">{formatCurrency(0)}</h4>
               </div>
             </div>
           </div>

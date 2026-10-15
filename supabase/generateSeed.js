@@ -16,9 +16,11 @@ function sqlEscape(val) {
   if (typeof val === 'number') return val;
   if (typeof val === 'boolean') return val ? 'TRUE' : 'FALSE';
   if (Array.isArray(val)) {
-    // Escape each item in text array: '{"item1", "item2"}'
-    const escapedItems = val.map(v => `"${String(v).replace(/"/g, '\\"')}"`).join(',');
-    return `'${escapedItems ? `{${escapedItems}}` : '{}'}'`;
+    if (val.length === 0 || typeof val[0] === 'string') {
+      const escapedItems = val.map(v => `"${String(v).replace(/"/g, '\\"')}"`).join(',');
+      return `'${escapedItems ? `{${escapedItems}}` : '{}'}'`;
+    }
+    return `'${JSON.stringify(val).replace(/'/g, "''")}'::jsonb`;
   }
   if (typeof val === 'object') {
     return `'${JSON.stringify(val).replace(/'/g, "''")}'::jsonb`;
@@ -28,7 +30,7 @@ function sqlEscape(val) {
 
 let sql = `-- ==============================================================================
 -- TASKPROXI SEED DATA SCRIPT
--- Generated from current frontend mock datasets
+-- Localized with Indian names, addresses, and INR currency
 -- ==============================================================================
 
 -- 1. SEED USERS
@@ -58,7 +60,7 @@ ON CONFLICT (id) DO NOTHING;\n`;
 sql += `\n-- 3. SEED GIGS & BIDS\n`;
 for (const g of initialMockGigs) {
   sql += `INSERT INTO public.gigs (id, owner_id, title, category, category_id, subcategory, subcategory_id, service, service_id, type, location, travel_radius, budget, currency, minimum_bid_floor, deadline, required_workers, required_skills, description, status, escrow_status, bids_count, created_at)
-VALUES (${sqlEscape(g.id)}, ${sqlEscape(g.ownerId || g.owner?.id)}, ${sqlEscape(g.title)}, ${sqlEscape(g.category)}, ${sqlEscape(g.categoryId)}, ${sqlEscape(g.subcategory)}, ${sqlEscape(g.subcategoryId)}, ${sqlEscape(g.service)}, ${sqlEscape(g.serviceId)}, ${sqlEscape(g.type)}, ${sqlEscape(g.location)}, ${sqlEscape(g.travelRadius)}, ${sqlEscape(g.budget)}, ${sqlEscape(g.currency)}, ${sqlEscape(g.minimumBidFloor)}, ${sqlEscape(g.deadline)}, ${sqlEscape(g.requiredWorkers || 1)}, ${sqlEscape(g.requiredSkills || [])}, ${sqlEscape(g.description)}, ${sqlEscape(g.status)}, ${sqlEscape(g.escrowStatus)}, ${sqlEscape(g.bidsCount || (g.bids ? g.bids.length : 0))}, ${sqlEscape(g.createdAt)})
+VALUES (${sqlEscape(g.id)}, ${sqlEscape(g.ownerId || g.owner?.id)}, ${sqlEscape(g.title)}, ${sqlEscape(g.category)}, ${sqlEscape(g.categoryId)}, ${sqlEscape(g.subcategory)}, ${sqlEscape(g.subcategoryId)}, ${sqlEscape(g.service)}, ${sqlEscape(g.serviceId)}, ${sqlEscape(g.type)}, ${sqlEscape(g.location)}, ${sqlEscape(g.travelRadius)}, ${sqlEscape(g.budget)}, ${sqlEscape(g.currency || 'INR')}, ${sqlEscape(g.minimumBidFloor)}, ${sqlEscape(g.deadline)}, ${sqlEscape(g.requiredWorkers || 1)}, ${sqlEscape(g.requiredSkills || [])}, ${sqlEscape(g.description)}, ${sqlEscape(g.status)}, ${sqlEscape(g.escrowStatus)}, ${sqlEscape(g.bidsCount || (g.bids ? g.bids.length : 0))}, ${sqlEscape(g.createdAt)})
 ON CONFLICT (id) DO UPDATE SET title = EXCLUDED.title, status = EXCLUDED.status;\n`;
 
   if (g.bids && g.bids.length > 0) {
@@ -91,8 +93,10 @@ ON CONFLICT (id) DO NOTHING;\n`;
 
 sql += `\n-- 5. SEED CONVERSATIONS & MESSAGES\n`;
 for (const c of initialMockConversations) {
+  const p1 = c.participantA || c.participantOne?.id || c.participantOne;
+  const p2 = c.participantB || c.participantTwo?.id || c.participantTwo;
   sql += `INSERT INTO public.conversations (id, gig_id, participant_one, participant_two, last_message, last_updated)
-VALUES (${sqlEscape(c.id)}, ${sqlEscape(c.gigId)}, ${sqlEscape(c.participantOne?.id || c.participantOne)}, ${sqlEscape(c.participantTwo?.id || c.participantTwo)}, ${sqlEscape(c.lastMessage)}, ${sqlEscape(c.lastUpdated)})
+VALUES (${sqlEscape(c.id)}, ${sqlEscape(c.gigId)}, ${sqlEscape(p1)}, ${sqlEscape(p2)}, ${sqlEscape(c.lastMessage)}, ${sqlEscape(c.lastUpdated)})
 ON CONFLICT (id) DO NOTHING;\n`;
 
   if (c.messages && c.messages.length > 0) {

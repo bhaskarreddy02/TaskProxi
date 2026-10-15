@@ -29,10 +29,10 @@ export default function PostGig() {
   const [subcategoryId, setSubcategoryId] = useState('sub_assembly');
   const [serviceId, setServiceId] = useState('srv_ikea_assembly');
   const [workType, setWorkType] = useState('physical');
-  const [location, setLocation] = useState('Seattle, WA');
-  const [travelRadius, setTravelRadius] = useState('10 miles');
-  const [budget, setBudget] = useState('250');
-  const [currency, setCurrency] = useState('USD');
+  const [location, setLocation] = useState('Indiranagar, Bengaluru, Karnataka');
+  const [travelRadius, setTravelRadius] = useState('5 km');
+  const [budget, setBudget] = useState('3500');
+  const [currency, setCurrency] = useState('INR');
   const [deadline, setDeadline] = useState('2026-10-01');
   const [requiredWorkers, setRequiredWorkers] = useState(1);
   const [skillInput, setSkillInput] = useState('');
@@ -74,8 +74,8 @@ export default function PostGig() {
       }
     }
     if (step === 3) {
-      if (!budget || Number(budget) < 20) {
-        setError('Minimum budget on TaskProxi is $20.');
+      if (!budget || Number(budget) < 500) {
+        setError('Minimum budget on TaskProxi is ₹500.');
         return;
       }
       if (!deadline) {
@@ -343,7 +343,7 @@ export default function PostGig() {
                         type="text"
                         value={location}
                         onChange={(e) => setLocation(e.target.value)}
-                        placeholder="e.g. Capitol Hill, Seattle, WA"
+                        placeholder="e.g. Indiranagar, Bengaluru, Karnataka"
                         className="w-full p-2 text-xs bg-white border border-slate-200 rounded-lg focus:outline-none focus:border-brand-500"
                       />
                     </div>
@@ -356,9 +356,9 @@ export default function PostGig() {
                         onChange={(e) => setTravelRadius(e.target.value)}
                         className="w-full p-2 text-xs bg-white border border-slate-200 rounded-lg focus:outline-none focus:border-brand-500"
                       >
-                        <option value="5 miles">Within 5 miles</option>
-                        <option value="10 miles">Within 10 miles</option>
-                        <option value="25 miles">Within 25 miles</option>
+                        <option value="5 km">Within 5 km</option>
+                        <option value="10 km">Within 10 km</option>
+                        <option value="25 km">Within 25 km</option>
                       </select>
                     </div>
                   </div>
@@ -382,16 +382,16 @@ export default function PostGig() {
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                 <div>
                   <label className="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1.5">
-                    Target Budget ($ USD) *
+                    Target Budget (₹ INR) *
                   </label>
                   <div className="relative">
-                    <span className="absolute left-3.5 top-2.5 font-bold text-slate-400">$</span>
+                    <span className="absolute left-3.5 top-2.5 font-bold text-slate-400">₹</span>
                     <input
                       type="number"
                       value={budget}
                       onChange={(e) => setBudget(e.target.value)}
-                      min="20"
-                      step="10"
+                      min="500"
+                      step="100"
                       className="w-full pl-8 pr-4 py-2.5 text-sm font-bold rounded-lg border border-slate-200 focus:outline-none focus:border-brand-500"
                     />
                   </div>

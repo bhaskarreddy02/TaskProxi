@@ -26,7 +26,7 @@ export const initialMockGigs = [
     ownerId: "usr_sarah",
     owner: {
       id: "usr_sarah",
-      name: "Sarah Connor",
+      name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
       reviewsCount: 38,
@@ -37,7 +37,7 @@ export const initialMockGigs = [
       {
         id: "bid_01",
         bidderId: "usr_david",
-        bidderName: "David Miller",
+        bidderName: "Rajesh Kumar",
         bidderAvatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
         bidderRating: 4.97,
         categoryRating: 4.98,
@@ -50,7 +50,7 @@ export const initialMockGigs = [
       {
         id: "bid_02",
         bidderId: "usr_carlos",
-        bidderName: "Carlos Rivera",
+        bidderName: "Rohan Patel",
         bidderAvatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
         bidderRating: 4.88,
         categoryRating: 4.70,
@@ -98,7 +98,7 @@ export const initialMockGigs = [
       {
         id: "bid_03",
         bidderId: "usr_carlos",
-        bidderName: "Carlos Rivera",
+        bidderName: "Rohan Patel",
         bidderAvatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
         bidderRating: 4.88,
         categoryRating: 4.92,
@@ -135,7 +135,7 @@ export const initialMockGigs = [
     ownerId: "usr_sarah",
     owner: {
       id: "usr_sarah",
-      name: "Sarah Connor",
+      name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
       reviewsCount: 38,
@@ -146,7 +146,7 @@ export const initialMockGigs = [
       {
         id: "bid_04",
         bidderId: "usr_elena",
-        bidderName: "Elena Rostova",
+        bidderName: "Ananya Iyer",
         bidderAvatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
         bidderRating: 5.0,
         categoryRating: 5.0,
@@ -183,7 +183,7 @@ export const initialMockGigs = [
     ownerId: "usr_sarah",
     owner: {
       id: "usr_sarah",
-      name: "Sarah Connor",
+      name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
       reviewsCount: 38,
@@ -192,7 +192,7 @@ export const initialMockGigs = [
     assignedWorkerId: "usr_marcus",
     assignedWorker: {
       id: "usr_marcus",
-      name: "Marcus Vance",
+      name: "Vikramaditya Singh",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
       rating: 4.95
     },
@@ -224,7 +224,7 @@ export const initialMockGigs = [
     ownerId: "usr_david",
     owner: {
       id: "usr_david",
-      name: "David Miller",
+      name: "Rajesh Kumar",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
       rating: 4.97,
       reviewsCount: 124,
@@ -265,7 +265,7 @@ export const initialMockGigs = [
     ownerId: "usr_elena",
     owner: {
       id: "usr_elena",
-      name: "Elena Rostova",
+      name: "Ananya Iyer",
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
       rating: 5.0,
       reviewsCount: 42,
@@ -299,7 +299,7 @@ export const initialMockGigs = [
     ownerId: "usr_sarah",
     owner: {
       id: "usr_sarah",
-      name: "Sarah Connor",
+      name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
       reviewsCount: 38,
@@ -333,7 +333,7 @@ export const initialMockGigs = [
     ownerId: "usr_marcus",
     owner: {
       id: "usr_marcus",
-      name: "Marcus Vance",
+      name: "Vikramaditya Singh",
       avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&auto=format&fit=crop&q=80",
       rating: 4.95,
       reviewsCount: 31,
@@ -367,7 +367,7 @@ export const initialMockGigs = [
     ownerId: "usr_sarah",
     owner: {
       id: "usr_sarah",
-      name: "Sarah Connor",
+      name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
       reviewsCount: 38,
@@ -376,7 +376,7 @@ export const initialMockGigs = [
     assignedWorkerId: "usr_emily",
     assignedWorker: {
       id: "usr_emily",
-      name: "Emily Thorne",
+      name: "Kavya Nambiar",
       avatar: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&auto=format&fit=crop&q=80",
       rating: 4.91
     },
@@ -442,7 +442,7 @@ export const initialMockGigs = [
     ownerId: "usr_sarah",
     owner: {
       id: "usr_sarah",
-      name: "Sarah Connor",
+      name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
       reviewsCount: 38,
@@ -451,7 +451,7 @@ export const initialMockGigs = [
     assignedWorkerId: "usr_elena",
     assignedWorker: {
       id: "usr_elena",
-      name: "Elena Rostova",
+      name: "Ananya Iyer",
       avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
       rating: 5.0
     },
@@ -483,7 +483,7 @@ export const initialMockGigs = [
     ownerId: "usr_sarah",
     owner: {
       id: "usr_sarah",
-      name: "Sarah Connor",
+      name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
       reviewsCount: 38,
@@ -517,7 +517,7 @@ export const initialMockGigs = [
     ownerId: "usr_carlos",
     owner: {
       id: "usr_carlos",
-      name: "Carlos Rivera",
+      name: "Rohan Patel",
       avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
       rating: 4.88,
       reviewsCount: 45,
@@ -551,7 +551,7 @@ export const initialMockGigs = [
     ownerId: "usr_david",
     owner: {
       id: "usr_david",
-      name: "David Miller",
+      name: "Rajesh Kumar",
       avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
       rating: 4.97,
       reviewsCount: 124,
@@ -586,7 +586,7 @@ export const initialMockGigs = [
     ownerId: "usr_sarah",
     owner: {
       id: "usr_sarah",
-      name: "Sarah Connor",
+      name: "Pooja Reddy",
       avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&auto=format&fit=crop&q=80",
       rating: 4.96,
       reviewsCount: 38,
@@ -595,7 +595,7 @@ export const initialMockGigs = [
     assignedWorkerId: "usr_carlos",
     assignedWorker: {
       id: "usr_carlos",
-      name: "Carlos Rivera",
+      name: "Rohan Patel",
       avatar: "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&auto=format&fit=crop&q=80",
       rating: 4.88
     },

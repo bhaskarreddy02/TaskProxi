@@ -11,7 +11,7 @@ export default function Signup() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const [location, setLocation] = useState('Seattle, WA');
+  const [location, setLocation] = useState('Bengaluru, Karnataka');
   const [primaryInterest, setPrimaryInterest] = useState('both');
   const [loading, setLoading] = useState(false);
   const [errorMsg, setErrorMsg] = useState('');
