@@ -20,7 +20,7 @@ import {
 } from 'lucide-react';
 
 export default function Navbar() {
-  const { currentUser, switchUser, allUsers, unreadNotificationsCount } = useMarketplace();
+  const { currentUser, switchUser, allUsers, unreadNotificationsCount, isDatabaseConnected } = useMarketplace();
   const location = useLocation();
   const navigate = useNavigate();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -48,8 +48,19 @@ export default function Navbar() {
       {/* Top micro-announcement banner */}
       <div className="bg-brand-900 text-white text-xs py-1 px-4 sm:px-8 flex items-center justify-between font-medium">
         <div className="flex items-center gap-2">
-          <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-          <span>TaskProxi MVP V1.0 &bull; Simulated Escrow Protection Active</span>
+          {isDatabaseConnected ? (
+            <span className="flex items-center gap-1.5 text-emerald-300 font-semibold">
+              <span className="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+              Live Supabase DB Connected
+            </span>
+          ) : (
+            <span className="flex items-center gap-1.5 text-amber-200">
+              <span className="inline-block w-2 h-2 rounded-full bg-amber-400"></span>
+              Demo Mode (Local DB)
+            </span>
+          )}
+          <span className="hidden sm:inline text-slate-400">&bull;</span>
+          <span className="hidden sm:inline text-slate-300">Simulated Escrow Protection</span>
         </div>
         <div className="hidden md:flex items-center gap-4">
           <Link to="/admin" className="hover:text-brand-200 transition-colors flex items-center gap-1">
