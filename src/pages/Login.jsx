@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useMarketplace } from '../context/MarketplaceContext';
 import { Lock, Mail, ArrowRight, AlertCircle } from 'lucide-react';
 import { authService } from '../services/dbServices';
+import Logo from '../components/common/Logo';
 
 export default function Login() {
   const navigate = useNavigate();
@@ -56,11 +57,11 @@ export default function Login() {
       <div className="max-w-md w-full bg-white rounded-2xl border border-slate-200 p-8 shadow-subtle space-y-6">
         
         <div className="text-center">
-          <div className="w-10 h-10 rounded-xl bg-brand-600 text-white font-black text-xl flex items-center justify-center mx-auto shadow-sm">
-            T
+          <div className="flex justify-center mb-3">
+            <Logo size="lg" />
           </div>
-          <h2 className="mt-4 text-2xl font-extrabold text-slate-900 tracking-tight">
-            Sign in to TaskProxi
+          <h2 className="mt-2 text-xl font-extrabold text-slate-900 tracking-tight">
+            Sign in to your account
           </h2>
           <p className="mt-1 text-xs text-slate-500">
             One account to post gigs, submit bids, and manage escrow payouts.

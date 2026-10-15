@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useMarketplace } from '../../context/MarketplaceContext';
 import UserAvatar from '../common/UserAvatar';
+import Logo from '../common/Logo';
 import {
   Search,
   PlusCircle,
@@ -77,19 +78,7 @@ export default function Navbar() {
           
           {/* Brand Logo & Tagline */}
           <div className="flex items-center gap-6">
-            <Link to="/" className="flex items-center gap-2.5 flex-shrink-0 group">
-              <div className="w-9 h-9 rounded-lg bg-brand-600 text-white flex items-center justify-center font-black text-xl shadow-sm group-hover:bg-brand-700 transition-colors">
-                T
-              </div>
-              <div className="flex flex-col">
-                <span className="font-extrabold text-xl tracking-tight text-slate-900 leading-none">
-                  Task<span className="text-brand-600">Proxi</span>
-                </span>
-                <span className="text-[10px] font-medium text-slate-500 tracking-wide uppercase mt-0.5">
-                  Universal Marketplace
-                </span>
-              </div>
-            </Link>
+            <Logo />
 
             {/* Desktop Navigation Links */}
             <nav className="hidden lg:flex items-center space-x-1">

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ShieldCheck, HeartHandshake, Scale, Lock, Globe, ArrowUpRight } from 'lucide-react';
+import Logo from '../common/Logo';
 
 export default function Footer() {
   return (
@@ -63,14 +64,7 @@ export default function Footer() {
         <div className="grid grid-cols-2 md:grid-cols-5 gap-8 mb-12">
           {/* Brand Col */}
           <div className="col-span-2">
-            <div className="flex items-center gap-2.5 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-brand-600 text-white flex items-center justify-center font-black text-lg">
-                T
-              </div>
-              <span className="font-extrabold text-xl tracking-tight text-white">
-                Task<span className="text-brand-400">Proxi</span>
-              </span>
-            </div>
+            <Logo dark={true} className="mb-4" />
             <p className="text-sm text-slate-400 max-w-sm mb-4 leading-relaxed">
               Get things done. Find people who can. The category-agnostic global marketplace for physical, digital, and professional gigs.
             </p>
