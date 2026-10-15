@@ -28,7 +28,7 @@ export default function Logo({
       {showText && (
         <div className="flex flex-col">
           <span className={`font-black tracking-tight leading-none ${title} ${dark ? 'text-white' : 'text-slate-900'}`}>
-            Task<span className={dark ? 'text-blue-400' : 'text-blue-600'}>Proxi</span>
+            Task<span className={dark ? 'text-brand-300' : 'text-brand-600'}>Proxi</span>
           </span>
           <span className={`font-bold tracking-[0.2em] uppercase mt-1 ${subtitle} ${dark ? 'text-slate-400' : 'text-slate-500'}`}>
             Universal Marketplace

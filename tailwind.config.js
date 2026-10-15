@@ -8,17 +8,17 @@ export default {
     extend: {
       colors: {
         brand: {
-          50: '#F0F7FF',
-          100: '#E0EFFF',
-          200: '#BAE0FD',
-          300: '#7CC4FA',
-          400: '#38A3F6',
-          500: '#0E85E5',
-          600: '#0267C1',
-          700: '#02529E',
-          800: '#064682',
-          900: '#0B3B6D',
-          950: '#07264A',
+          50: '#F0F5FF',
+          100: '#E0EBFF',
+          200: '#BAD3FE',
+          300: '#85B4FD',
+          400: '#488BFA',
+          500: '#1A60DF',
+          600: '#003B95', // User's Royal Cobalt / Sapphire Blue (#003B95)
+          700: '#002F78',
+          800: '#00245E',
+          900: '#001A45',
+          950: '#00102D',
         },
         navy: {
           800: '#152538',
@@ -32,7 +32,7 @@ export default {
       boxShadow: {
         subtle: '0 1px 3px 0 rgba(15, 23, 42, 0.06), 0 1px 2px -1px rgba(15, 23, 42, 0.04)',
         card: '0 2px 8px -2px rgba(15, 23, 42, 0.08), 0 1px 4px -1px rgba(15, 23, 42, 0.04)',
-        float: '0 10px 25px -5px rgba(2, 82, 158, 0.12), 0 8px 10px -6px rgba(2, 82, 158, 0.08)',
+        float: '0 10px 25px -5px rgba(0, 59, 149, 0.16), 0 8px 10px -6px rgba(0, 59, 149, 0.10)',
       }
     },
   },

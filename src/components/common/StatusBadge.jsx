@@ -18,8 +18,8 @@ const STATUS_CONFIGS = {
   },
   IN_PROGRESS: {
     label: "In Progress",
-    bg: "bg-blue-100 text-blue-900 border-blue-300",
-    dot: "bg-blue-600"
+    bg: "bg-brand-50 text-brand-800 border-brand-200",
+    dot: "bg-brand-600"
   },
   SUBMITTED: {
     label: "Review Pending",
