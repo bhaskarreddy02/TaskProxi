@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useMarketplace } from '../context/MarketplaceContext';
 import GigCard from '../components/gigs/GigCard';
 import RatingStars from '../components/common/RatingStars';
+import { useTypewriter } from '../hooks/useTypewriter';
 import {
   Search,
   Wrench,
@@ -20,10 +21,41 @@ import {
   Scale
 } from 'lucide-react';
 
+const SEARCH_SUGGESTIONS = [
+  "assemble Ikea table",
+  "fix leaky faucet",
+  "React developer",
+  "mount TV on wall",
+  "move 1BHK apartment",
+  "house deep cleaning",
+  "hire event bartender",
+  "emergency electrician",
+  "logo & UI designer"
+];
+
 export default function Home() {
   const { gigs, categories } = useMarketplace();
   const navigate = useNavigate();
   const [searchQuery, setSearchQuery] = useState('');
+  const [isFocused, setIsFocused] = useState(false);
+
+  const { displayText, cursorVisible, currentWord } = useTypewriter({
+    words: SEARCH_SUGGESTIONS,
+    typeSpeed: 60,
+    deleteSpeed: 30,
+    delayAfterWord: 1800,
+    delayAfterDelete: 350,
+    pause: Boolean(searchQuery)
+  });
+
+  const animatedPlaceholder = `What do you need done? (e.g. ${displayText}${!isFocused && cursorVisible ? '|' : ''})`;
+
+  const handleKeyDown = (e) => {
+    if (e.key === 'Tab' && !searchQuery && currentWord) {
+      e.preventDefault();
+      setSearchQuery(currentWord);
+    }
+  };
 
   const handleSearch = (e) => {
     e.preventDefault();
@@ -127,7 +159,10 @@ export default function Home() {
                 type="text"
                 value={searchQuery}
                 onChange={(e) => setSearchQuery(e.target.value)}
-                placeholder="What do you need done? (e.g. assemble Ikea table, fix leaky faucet, React dev)..."
+                onFocus={() => setIsFocused(true)}
+                onBlur={() => setIsFocused(false)}
+                onKeyDown={handleKeyDown}
+                placeholder={animatedPlaceholder}
                 className="w-full py-2.5 text-sm text-slate-800 focus:outline-none placeholder:text-slate-400 font-medium"
               />
               <button
